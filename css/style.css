@@ -726,21 +726,26 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr auto;
     gap: 14px;
-    text-align: left;
-    align-items: start;
+    text-align: center;
+    align-items: center;
   }
-  .footer-info { grid-column: 1; }
+  .footer-info {
+    grid-column: 1;
+    justify-self: center;
+  }
   .footer-map {
     grid-column: 2;
     width: 100%;
     max-width: 100%;
   }
+  .footer-map { justify-self: center; }
   .footer-map iframe { height: 140px; }
   .footer-social {
     grid-column: 3;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
     gap: 14px;
   }
 
